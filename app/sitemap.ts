@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next';import {products} from '@/data/products';export default function sitemap():MetadataRoute.Sitemap{return[{url:'https://rzofashion.in',priority:1},...products.map(p=>({url:`https://rzofashion.in/products/${p.slug}`,priority:.8}))]}
